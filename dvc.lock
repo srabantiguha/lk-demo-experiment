@@ -1,0 +1,138 @@
+schema: '2.0'
+stages:
+  eval-report-ml100k:
+    cmd: papermill -r dataset ml100k eval-report.ipynb eval-report.ml100k.ipynb
+    deps:
+    - path: eval-report.ipynb
+      md5: 5d325ed38aa2f0d753753bff7b1e6157
+      size: 18831
+    - path: runs/ml100k-ALS
+      md5: 99a11cddcdf51119c267b709a29a579a.dir
+      size: 1294301
+      nfiles: 10
+    - path: runs/ml100k-Bias
+      md5: 4c25998e2145f6f6a0dd8b913c9fa93d.dir
+      size: 1247357
+      nfiles: 10
+    - path: runs/ml100k-IALS
+      md5: e73cc6eb2d49d54d992279de86cc6d3e.dir
+      size: 1331285
+      nfiles: 10
+    - path: runs/ml100k-II
+      md5: e70493fe7292fb5f1304493a7a016d09.dir
+      size: 1295310
+      nfiles: 10
+    - path: runs/ml100k-Pop
+      md5: 698ce49a9d833c8cd8121c985686494b.dir
+      size: 420095
+      nfiles: 5
+    - path: runs/ml100k-UU
+      md5: f259cfd73de81bc6bea6eebf5db7760d.dir
+      size: 1245855
+      nfiles: 10
+    outs:
+    - path: eval-report.ml100k.ipynb
+      md5: cd79964e2c56641406269c2048f88ef3
+      size: 86612
+  eval-report-mlsmall:
+    cmd: papermill -r dataset mlsmall eval-report.ipynb eval-report.mlsmall.ipynb
+    deps:
+    - path: eval-report.ipynb
+      md5: 5d325ed38aa2f0d753753bff7b1e6157
+      size: 18831
+    - path: runs/mlsmall-ALS
+      md5: d01b81d269a90f762f57f1972a5a525c.dir
+      size: 862004
+      nfiles: 10
+    - path: runs/mlsmall-Bias
+      md5: 7956bc6e3ced3b0bd6a8b931ac4191b7.dir
+      size: 790580
+      nfiles: 10
+    - path: runs/mlsmall-IALS
+      md5: 32e25434bc1fb2d6746fc47f5eae18c6.dir
+      size: 887235
+      nfiles: 10
+    - path: runs/mlsmall-II
+      md5: 455b8ed2fa64be780381d12f99e6eabb.dir
+      size: 838777
+      nfiles: 10
+    - path: runs/mlsmall-Pop
+      md5: 811c72c49d387dc0d8b1640c56b02065.dir
+      size: 274196
+      nfiles: 5
+    - path: runs/mlsmall-UU
+      md5: dfbd206c8448ac1d9c65c40d86ea1bc5.dir
+      size: 572500
+      nfiles: 10
+    outs:
+    - path: eval-report.mlsmall.ipynb
+      md5: fdc4e380d619cb3b5154c541399ffc24
+      size: 86718
+  eval-report-ml10m:
+    cmd: papermill -r dataset ml10m eval-report.ipynb eval-report.ml10m.ipynb
+    deps:
+    - path: eval-report.ipynb
+      md5: 5d325ed38aa2f0d753753bff7b1e6157
+      size: 18831
+    - path: runs/ml10m-ALS
+      md5: 37d9613075d7f126c79697bbe0b4156c.dir
+      size: 98284783
+      nfiles: 10
+    - path: runs/ml10m-Bias
+      md5: a52839e7ce2305bc3ff41f548f47e894.dir
+      size: 94246886
+      nfiles: 10
+    - path: runs/ml10m-IALS
+      md5: 30ea5e5553187c5861e3a0dd52f480e9.dir
+      size: 101479065
+      nfiles: 10
+    - path: runs/ml10m-II
+      md5: dc1978d82d0aa1d3cc1d73f6d080909e.dir
+      size: 100692679
+      nfiles: 10
+    - path: runs/ml10m-Pop
+      md5: 4f1424fadbd09ee3d081b079ab99cb14.dir
+      size: 32509468
+      nfiles: 5
+    - path: runs/ml10m-UU
+      md5: 291ea510b8a135659a47c7f74b159eb1.dir
+      size: 96186480
+      nfiles: 10
+    outs:
+    - path: eval-report.ml10m.ipynb
+      md5: 861cd65544ece5c832b1708cee91fb73
+      size: 87749
+  eval-report-ml20m:
+    cmd: papermill -r dataset ml20m eval-report.ipynb eval-report.ml20m.ipynb
+    deps:
+    - path: eval-report.ipynb
+      md5: 5d325ed38aa2f0d753753bff7b1e6157
+      size: 18831
+    - path: runs/ml20m-ALS
+      md5: e89fa36d620fbbc55f59677f37c06459.dir
+      size: 198908415
+      nfiles: 10
+    - path: runs/ml20m-Bias
+      md5: bb7678a5fa9a9aecc0dc65dfbe54eb8b.dir
+      size: 188057283
+      nfiles: 10
+    - path: runs/ml20m-IALS
+      md5: 311c1e2a51ea74b9c67bb63228182d6e.dir
+      size: 202688074
+      nfiles: 10
+    - path: runs/ml20m-II
+      md5: bf9c2e719a52fc2db7e7e7338cb61392.dir
+      size: 197737941
+      nfiles: 10
+    - path: runs/ml20m-Pop
+      md5: 5897eefe42259adbb4851582b41eb7b7.dir
+      size: 64439862
+      nfiles: 5
+    - path: runs/ml20m-UU
+      md5: 9c788b6439c97cdec997d2f7666f6a2b.dir
+      size: 160829560
+      nfiles: 10
+    outs:
+    - path: eval-report.ml20m.ipynb
+      md5: a79eadaa8223aac6a2ed29bbbf487d35
+      size: 85702

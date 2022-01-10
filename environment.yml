@@ -1,0 +1,25 @@
+name: lk-demo
+channels:
+- conda-forge
+dependencies:
+- python=3.9
+- lenskit=0.13
+- pip
+- psutil
+- pandas
+- scipy
+- numba
+- cffi
+- pyarrow
+- tbb
+- notebook
+- seaborn
+- ipython
+- ipywidgets
+- tqdm
+- implicit
+- statsmodels
+- docopt
+- dvc>=2
+- boto3
+- papermill
